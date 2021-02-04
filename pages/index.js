@@ -3,6 +3,7 @@ import Head from 'next/head';
 
 import Navbar from '../components/navbar/navbar'
 import HomeInfo from '../components/home-info/home-info';
+import MobileNavbar from '../components/mobile-navbar/mobile-navbar';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
 
         <HomeInfo />
       </div>
+      <MobileNavbar />
     </div>
   );
 }

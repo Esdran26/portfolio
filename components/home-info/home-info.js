@@ -28,7 +28,7 @@ const HomeInfo = () => {
                     <h1>ANDRES VARGAS</h1>
                     <p>Web Developer passionate about software development and
                     keep learning new technologies, experiences and communities.</p>
-                    <br/><br/>
+                    <br/>
                     
                     <div className={ styles.buttons }>
                         <Link href="/">

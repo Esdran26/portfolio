@@ -39,7 +39,9 @@ const Navbar = ({ transparent }) => {
     else {
         styleMenu = {
             backgroundColor: '#111414',
-            position: 'fixed'
+            position: 'fixed',
+            width: '100vw',
+            zIndex: '4'
         }
 
         styleLinksMenu = {
