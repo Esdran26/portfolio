@@ -1,0 +1,46 @@
+@import './settings.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+h1, h2 a {
+  font-family: $font-title;
+  font-weight: 900;
+}
+
+p {
+  font-weight: 500;
+}
+
+footer p, p {
+  font-family: $font-text;
+  font-weight: 500;
+}
+
+h2 a {
+  font-size: 50px;
+}
+
+p, a {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-family: $font-text;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 60px;
+  color: $primary;
+  font-weight: 900;
+  font-style: italic;
+}

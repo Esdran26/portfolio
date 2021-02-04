@@ -1,0 +1,79 @@
+@import '../settings.scss';
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  margin-top: 4rem;
+}
+.image img {
+  border-radius: 50%;
+  width: 581px;
+}
+
+.content {
+  margin-left: 5rem;
+}
+
+.content p:nth-child(1) {
+  letter-spacing: 2px;
+}
+
+.buttons a {
+  margin-right: 3rem;
+}
+
+.buttons a:nth-child(1) {
+  background-color: $primary;
+  color: $logo;
+  border: 1px solid $primary;
+  padding: 18px 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  transition: all .3s ease-in-out;
+}
+
+.buttons a:nth-child(1):hover {
+  background-color: $logo;
+  color: $primary;
+}
+
+.buttons a:nth-child(2) {
+  color: $primary;
+  letter-spacing: 2px;
+  border: 1px solid transparent;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.media a {
+  margin-right: 3rem;
+  font-size: 25px;
+  color: white;
+}
+
+.media a svg:nth-child(4) {
+  margin-right: 0;
+}
+
+.media a svg {
+  transition: all .3s ease-in-out;
+}
+
+.media a svg:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 1500px) {
+  .content {
+    margin-left: 8rem;
+    margin-right: 1rem;
+  }
+}

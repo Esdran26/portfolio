@@ -1,0 +1,33 @@
+@import '../settings.scss';
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100px;
+    align-items: center;
+}
+
+.logo h2 a {
+    margin-left: 150px;
+    color: $logo;
+}
+
+.menu {
+    margin-right: 150px;
+}
+
+.menu a {
+    margin-left: 4.688rem;
+    color: $black;
+}
+
+@media screen and (max-width: 1500px) {
+    .logo h2 a {
+        margin-left: 50px;
+    }
+    
+    .menu {
+        margin-right: 50px;
+    }
+}
