@@ -1,3 +1,5 @@
+@import './settings.scss';
+
 .container {
   display: flex;
   flex-direction: column;
@@ -11,4 +13,21 @@
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+}
+
+@media screen and (max-width: 1300px) {
+ .background {
+   background-image: url('https://res.cloudinary.com/esdran26/image/upload/v1612472647/Web_1920_4_2x_jqbxvf.png');
+ } 
+}
+
+@media screen and (max-width: 768px) {
+  .background {
+    background-image: none;
+    background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  } 
 }

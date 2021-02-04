@@ -8,11 +8,12 @@
 }
 .image img {
   border-radius: 50%;
-  width: 581px;
+  width: 500px;
 }
 
 .content {
   margin-left: 5rem;
+  max-width: 560px;
 }
 
 .content p:nth-child(1) {
@@ -21,13 +22,14 @@
 
 .buttons a {
   margin-right: 3rem;
+  font-size: 15px;
 }
 
 .buttons a:nth-child(1) {
   background-color: $primary;
   color: $logo;
   border: 1px solid $primary;
-  padding: 18px 24px;
+  padding: 12px 20px;
   font-weight: bold;
   letter-spacing: 2px;
   border-radius: 10px;
@@ -49,20 +51,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 8rem;
+  margin-top: 12rem;
+  margin-bottom: 1rem;
 }
 
-.media a {
-  margin-right: 3rem;
-  font-size: 25px;
+.media a  {
+  margin-right: 3rem;  
   color: white;
 }
 
-.media a svg:nth-child(4) {
+.media a:nth-child(4) {
   margin-right: 0;
 }
 
 .media a svg {
+  width: 25px;
+  height: 25px;
   transition: all .3s ease-in-out;
 }
 
@@ -75,5 +79,102 @@
   .content {
     margin-left: 8rem;
     margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .content h1{
+    font-size: 50px;
+  }
+  .image img {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .image img {
+    width: 450px;
+  }
+
+  .content {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 1173px) {
+  .content h1{
+    font-size: 45px;
+  }
+
+  .image img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: end;
+    margin-right: 50px;
+  }
+
+  .contact {
+    margin-top: 40vh;
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    margin: 0;
+    text-align: right;
+  }
+
+  .image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    display: block;
+    
+  }
+  
+  .contact {
+    margin-top: 4rem;
+  }
+
+  .content {
+    text-align: center;
+    max-width: 320px;
+  }
+
+  .content h1 {
+    font-size: 35px;
+  }
+
+  .content p {
+    font-size: 15px;
+  }
+
+  .buttons a {
+    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .container, .image {
+    margin: 0 auto;
+  }
+
+  .image {
+    width: 200px;
+    text-align: center;
+    margin-bottom: 1.5rem;
   }
 }
