@@ -7,35 +7,119 @@ import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 
 import styles from '../../styles/components/MobileNavbar.module.scss';
 
-const MobileNavbar = ({ section }) => {
+const MobileNavbar = ({ section = 'Home' }) => {
+  let styleSVGHome, styleSVGAbout, styleSVGTimeline, styleSVGProjects;
+  let styleSmallHome, styleSmallAbout, styleSmallTimeline, styleSmallProjects;
+
+  switch (section) {
+    case 'Home':
+      styleSVGHome = {
+        color: 'white'
+      }
+      styleSmallHome = {
+        display: 'block'
+      }
+      break;
+
+    case 'About':
+      styleSVGAbout = {
+        color: 'white'
+      }
+      styleSmallAbout = {
+        display: 'block'
+      }
+      break;
+
+    case 'Timeline':
+      styleSVGTimeline = {
+        color: 'white'
+      }
+      styleSmallTimeline = {
+        display: 'block'
+      }
+      break;
+
+    case 'Projects':
+      styleSVGProjects = {
+        color: 'white'
+      }
+      styleSmallProjects = {
+        display: 'block'
+      }
+      break;
   
+    default:
+      styleSVGHome = {
+        color: 'white'
+      }
+      styleSmallHome = {
+        display: 'block'
+      }
+      break;
+  }
 
   return(
     <div className={ styles.mobile }>
-      <Link href="/">
+      <Link  href="/">
         <a className={ styles.link }>
-          <FontAwesomeIcon icon={ faHome } />
-          <small className={ styles.small }>Home</small>
+          <FontAwesomeIcon 
+            style={ styleSVGHome } 
+            icon={ faHome }
+          />
+          <small 
+            style={ styleSmallHome }
+            className={ styles.small }
+          >
+            { section }
+          </small>
         </a>
       </Link>
 
-      <Link href="/">
-        <a>
-          <FontAwesomeIcon icon={ faUser } />
+      <Link  href="/">
+        <a className={ styles.link }>
+          <FontAwesomeIcon 
+            style={ styleSVGAbout } 
+            icon={ faUser }
+          />
+          <small 
+            style={ styleSmallAbout }
+            className={ styles.small }
+          >
+            { section }
+          </small>
         </a>
       </Link>
 
-      <Link href="/">
-        <a>
-          <FontAwesomeIcon icon={ faHistory } />
+      <Link  href="/">
+        <a className={ styles.link }>
+          <FontAwesomeIcon 
+            style={ styleSVGTimeline } 
+            icon={ faHistory }
+          />
+          <small 
+            style={ styleSmallTimeline }
+            className={ styles.small }
+          >
+            { section }
+          </small>
         </a>
       </Link>
 
-      <Link href="/">
-        <a>
-          <FontAwesomeIcon icon={ faCodeBranch } />
+      <Link  href="/">
+        <a className={ styles.link }>
+          <FontAwesomeIcon 
+            style={ styleSVGProjects } 
+            icon={ faCodeBranch }
+          />
+          <small 
+            style={ styleSmallProjects }
+            className={ styles.small }
+          >
+            { section }
+          </small>
         </a>
       </Link>
+
     </div>
   );
 }

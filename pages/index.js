@@ -18,7 +18,7 @@ export default function Home() {
 
         <HomeInfo />
       </div>
-      <MobileNavbar />
+      <MobileNavbar section="About" />
     </div>
   );
 }
