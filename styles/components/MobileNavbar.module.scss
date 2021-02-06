@@ -10,9 +10,7 @@
 
 @media screen and (max-width: 768px) {
   .mobile {
-    display: block;
     height: 80px;
-    position: fixed;
     display: flex;
     background-color: white;
     width: 100vw;
@@ -37,18 +35,4 @@
   .mobile a svg, .link, .small {
     transition: all .3s ease-in-out;
   }
-/*
-  //No
-  .mobile a:nth-child(1) svg {
-    color: white;
-  }
-
-  //No
-  .small {
-    color: white;
-    font-weight: 400;
-    text-align: center;
-    font-size: 13px;
-    margin-top: .2rem;
-  }*/
 }

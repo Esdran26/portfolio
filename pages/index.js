@@ -12,13 +12,14 @@ export default function Home() {
         <title>Andres Vargas | Porfolio</title>
       </Head>
       <div className={ styles.background }>
+        <MobileNavbar section="Home" />
         <Navbar
           transparent="on"
         />
 
         <HomeInfo />
+        
       </div>
-      <MobileNavbar section="About" />
     </div>
   );
 }

@@ -17,8 +17,8 @@ const HomeInfo = () => {
           <Image 
             alt="Andres Vargas"
             src={ `https://res.cloudinary.com/esdran26/image/upload/v1612371692/55358669_tok40d.jpg` }
-            width={ 581 }
-            height={ 581 }
+            width={ 500 }
+            height={ 500 }
             priority
           />
         </div>

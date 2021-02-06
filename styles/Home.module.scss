@@ -13,6 +13,9 @@
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1300px) {
@@ -26,7 +29,5 @@
     background-image: url('https://res.cloudinary.com/esdran26/image/upload/v1612478634/Web_1920_5_2x_oxzv26.png');
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
   } 
 }

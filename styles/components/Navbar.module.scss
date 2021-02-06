@@ -27,6 +27,12 @@
   }
   
   .menu {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .menu {
     margin-right: 50px;
   }
 }
