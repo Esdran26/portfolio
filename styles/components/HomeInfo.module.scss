@@ -6,11 +6,6 @@
   place-items: center;
 }
 
-.image img {
-  border-radius: 50%;
-  width: 500px;
-}
-
 .content {
   margin-left: 5rem;
   max-width: 560px;
@@ -90,7 +85,7 @@
     font-size: 50px;
   }
   .image img {
-    width: 450px;
+    width: 390px;
   }
 }
 
@@ -155,14 +150,13 @@
 
   .buttons a {
     margin: 0;
-    margin: 0 auto;
+    margin: 0 .5rem;
     margin-bottom: 1.5rem;
+    font-size: 12px;
   }
 
   .buttons {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
+    margin-bottom: 1.5rem;
   }
   .container, .image {
     margin: 0 auto;

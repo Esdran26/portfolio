@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className={ styles.container }>
       <Head>
-        <title>Andres Vargas | Porfolio</title>
+        <title>Andres Vargas | Portfolio</title>
       </Head>
       <div className={ styles.background }>
         <MobileNavbar section="Home" />
