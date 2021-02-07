@@ -11,7 +11,7 @@ const Navbar = ({ transparent }) => {
       name: 'Home'
     },
     {
-      to: '/',
+      to: '/about',
       name: 'About'
     },
     {

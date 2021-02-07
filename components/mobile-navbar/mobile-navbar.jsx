@@ -10,6 +10,11 @@ import styles from '../../styles/components/MobileNavbar.module.scss';
 const MobileNavbar = ({ section = 'Home' }) => {
   let styleSVGHome, styleSVGAbout, styleSVGTimeline, styleSVGProjects;
   let styleSmallHome, styleSmallAbout, styleSmallTimeline, styleSmallProjects;
+  let positionFixed;
+
+  section !== 'Home'
+    ? positionFixed = 'fixed'
+    : positionFixed = 'initial';
 
   switch (section) {
     case 'Home':
@@ -59,7 +64,10 @@ const MobileNavbar = ({ section = 'Home' }) => {
   }
 
   return(
-    <div className={ styles.mobile }>
+    <div 
+      style={{ position: positionFixed }} 
+      className={ styles.mobile }
+    >
       <Link  href="/">
         <a className={ styles.link }>
           <FontAwesomeIcon 
@@ -75,7 +83,7 @@ const MobileNavbar = ({ section = 'Home' }) => {
         </a>
       </Link>
 
-      <Link  href="/">
+      <Link  href="/about">
         <a className={ styles.link }>
           <FontAwesomeIcon 
             style={ styleSVGAbout } 
