@@ -31,7 +31,7 @@ const HomeInfo = () => {
           <br/>
           
           <div className={ styles.buttons }>
-            <Link href="/">
+            <Link href="/about">
               <a>Discover Now</a>
             </Link>
             <a 

@@ -3,27 +3,9 @@ import Link from 'next/link'
 
 import NavbarMenu from './navbar-menu';
 import styles from '../../styles/components/Navbar.module.scss';
+import { menu } from '../../data/navbar/navbar-data';
 
 const Navbar = ({ transparent }) => {
-  const menu = [
-    {
-      to: '/',
-      name: 'Home'
-    },
-    {
-      to: '/about',
-      name: 'About'
-    },
-    {
-      to: '/',
-      name: 'Timeline'
-    },
-    {
-      to: '/',
-      name: 'Projects'
-    }
-  ];
-
   let styleMenu = {};
   let styleLinksMenu = {};
 
