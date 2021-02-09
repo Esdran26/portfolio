@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import styles from '../../styles/components/SectionTitle.module.scss';
+import styles from '../../styles/components/global/SectionTitle.module.scss';
 
 const SectionTitle = ({ title }) => {
   const uppercase = title.toUpperCase();

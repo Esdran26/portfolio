@@ -7,7 +7,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
-import styles from '../../styles/components/HomeInfo.module.scss';
+import styles from '../../styles/components/home-info/HomeInfo.module.scss';
 
 const HomeInfo = () => {
   return (

@@ -5,7 +5,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faHistory } from '@fortawesome/free-solid-svg-icons';
 import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 
-import styles from '../../styles/components/MobileNavbar.module.scss';
+import styles from '../../styles/components/mobile-navbar/MobileNavbar.module.scss';
 
 const MobileNavbar = ({ section = 'Home' }) => {
   let styleSVGHome, styleSVGAbout, styleSVGTimeline, styleSVGProjects;

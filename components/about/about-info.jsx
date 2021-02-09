@@ -1,6 +1,7 @@
-import SectionText from './section-text';
-import SectionTitle from './section-title';
+import SectionText from '../global/section-text';
+import SectionTitle from '../global/section-title';
 import { iconsAbout } from '../../data/about-info/about-info-data';
+import SectionSkills from './section-skills';
 
 const AboutInfo = () => {
   return(
@@ -11,6 +12,8 @@ const AboutInfo = () => {
         title="My Hobbies"
         icons={ iconsAbout }
       />
+
+      <SectionSkills />
     </div>
   );
 }

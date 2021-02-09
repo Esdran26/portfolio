@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link'
 
 import NavbarMenu from './navbar-menu';
-import styles from '../../styles/components/Navbar.module.scss';
+import styles from '../../styles/components/navbar/Navbar.module.scss';
 import { menu } from '../../data/navbar/navbar-data';
 
 const Navbar = ({ transparent }) => {

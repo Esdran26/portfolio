@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Image from 'next/image';
 
-import styles from '../../styles/components/SectionText.module.scss';
+import styles from '../../styles/components/global/SectionText.module.scss';
 
 const SectionText = ({ text, title = '', icons }) => {
   return(
