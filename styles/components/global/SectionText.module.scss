@@ -35,7 +35,6 @@
 .hobbieTitle {
   margin-top: .5rem;
   font-weight: 700;
-  font-style: italic;
 }
 
 @media screen and (max-width: 1024px) {
@@ -48,12 +47,21 @@
   .container {
     margin: 0 2rem;
     margin-top: -15vw;
+    margin-bottom: 4rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .container {
     margin: 2rem;
+    margin-bottom: 4rem;
+    background-color: transparent;
+    box-shadow: none;
+
+    &:hover {
+      box-shadow: none;
+      transform: none;
+    }
   }
 }
 
@@ -61,6 +69,7 @@
   .container {
     margin: 1rem;
     padding: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .icons {

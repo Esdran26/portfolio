@@ -1,4 +1,17 @@
 .title {
   text-align: center;
   font-style: normal;
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 920px) {
+  .title {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    margin-bottom: 3rem;
+  }
 }

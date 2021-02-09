@@ -1,4 +1,4 @@
-import styles from '../../styles/components/about/FrontendSkills.module.scss';
+import styles from '../../styles/components/about/Skills.module.scss';
 import Image from 'next/image';
 
 import 
@@ -28,7 +28,10 @@ const FrontendSkills = () => {
 
         {
           frontendMappingContent.map((skill, index) => (
-            <div className={ styles.progress }>
+            <div 
+              className={ styles.progress }
+              key={ index }
+            >
               <p>
                 { skill.name }
                 <span>

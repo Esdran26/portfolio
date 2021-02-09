@@ -1,7 +1,7 @@
 @import '../../settings.scss';
 
 .progress p {
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 1.5rem;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .progressBar {
-  height: 30px;
+  height: 20px;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 25px;
   display: flex;
@@ -38,13 +38,51 @@
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 .skills {
-  width: 690px;
+  width: 40vw;
+  margin: 0 auto;
 }
 
 .illustration {
   text-align: center;
 }
+.illustration img {
+  width: 40vw;
+}
 
+@media screen and (max-width: 980px) {
+  .container {
+    grid-template-columns: 1fr 0;
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 4rem;
+  }
+
+  .illustration img, .skills {
+    width: 70vw;
+  }
+
+  .skills {
+    grid-row: 2 / 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills h3 {
+    margin-top: 2rem;
+  }
+
+  .container {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+}
