@@ -5,7 +5,7 @@ import NavbarMenu from './navbar-menu';
 import styles from '../../styles/components/navbar/Navbar.module.scss';
 import { menu } from '../../data/navbar/navbar-data';
 
-const Navbar = ({ transparent }) => {
+const Navbar = ({ transparent = '' }) => {
   let styleMenu = {};
   let styleLinksMenu = {};
 
@@ -56,5 +56,5 @@ const Navbar = ({ transparent }) => {
 export default Navbar;
 
 Navbar.propTypes = {
-  transparent: PropTypes.string.isRequired
+  transparent: PropTypes.string
 }

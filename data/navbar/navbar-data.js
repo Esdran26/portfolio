@@ -8,7 +8,7 @@ export const menu = [
     name: 'About'
   },
   {
-    to: '/',
+    to: '/timeline',
     name: 'Timeline'
   },
   {

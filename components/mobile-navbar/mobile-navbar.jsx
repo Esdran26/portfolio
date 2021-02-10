@@ -98,7 +98,7 @@ const MobileNavbar = ({ section = 'Home' }) => {
         </a>
       </Link>
 
-      <Link  href="/">
+      <Link  href="/timeline">
         <a className={ styles.link }>
           <FontAwesomeIcon 
             style={ styleSVGTimeline } 

@@ -14,7 +14,7 @@ const About = () => {
       </Head>
 
       <MobileNavbar section="About" />
-      <Navbar transparent="off" />
+      <Navbar />
 
       <AboutInfo />
 
