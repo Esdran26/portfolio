@@ -16,7 +16,8 @@
     "aos": "^2.3.4",
     "next": "10.0.6",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-vertical-timeline-component": "^3.3.3"
   },
   "devDependencies": {
     "sass": "^1.32.6"

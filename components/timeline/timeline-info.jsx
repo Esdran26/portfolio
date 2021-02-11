@@ -2,6 +2,7 @@ import { iconsTimeline } from "../../data/timeline-info/timeline-info-data";
 import CenterTitle from "../global/center-title";
 import SectionText from "../global/section-text"
 import SectionTitle from "../global/section-title"
+import Timeline from "./timeline";
 
 const TimelineInfo = () => {
   return(
@@ -13,6 +14,8 @@ const TimelineInfo = () => {
       />
 
       <CenterTitle title="Jobs & Education" />
+
+      <Timeline />
     </>
   );
 }

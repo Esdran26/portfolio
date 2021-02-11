@@ -10,7 +10,7 @@ html, body {
   min-height: 100vh;
 }
 
-h1, h2 a, h2, h3 {
+h1, h2 a, h2, h3, h4 {
   font-family: $font-title;
   font-weight: 900;
 }
@@ -60,6 +60,11 @@ small {
   text-align: center;
   font-size: 13px;
   margin-top: .2rem;
+}
+
+span {
+  font-family: $font-text;
+  color: $black;
 }
 
 @media screen and (max-width: 1360px) {
