@@ -113,7 +113,7 @@ const MobileNavbar = ({ section = 'Home' }) => {
         </a>
       </Link>
 
-      <Link  href="/">
+      <Link  href="/projects">
         <a className={ styles.link }>
           <FontAwesomeIcon 
             style={ styleSVGProjects } 

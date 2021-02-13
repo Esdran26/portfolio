@@ -12,7 +12,7 @@ export const menu = [
     name: 'Timeline'
   },
   {
-    to: '/',
+    to: '/projects',
     name: 'Projects'
   }
 ];

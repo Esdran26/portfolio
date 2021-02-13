@@ -8,18 +8,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { faMedal } from '@fortawesome/free-solid-svg-icons';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-
 
 const Timeline = () => {
   return(
     <VerticalTimeline>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        contentStyle={{ background: '#3d71f2', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  #3d71f2' }}
+        contentStyle={{ background: '#227093', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  #227093' }}
         date="August 2020 - Present"
-        iconStyle={{ background: '#3d71f2', color: '#fff' }}
+        iconStyle={{ background: '#227093', color: '#fff' }}
         icon={<FontAwesomeIcon icon={ faBriefcase } />}
       >
         <h3 style={{ color: 'white' }} className="vertical-timeline-element-title">
@@ -35,10 +33,10 @@ const Timeline = () => {
 
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        contentStyle={{ background: '#3d71f2', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  #3d71f2' }}
+        contentStyle={{ background: '#227093', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  #227093' }}
         date="June 2020"
-        iconStyle={{ background: '#3d71f2', color: '#fff' }}
+        iconStyle={{ background: '#227093', color: '#fff' }}
         icon={<FontAwesomeIcon icon={ faBriefcase } />}
       >
         <h3 style={{ color: 'white' }} className="vertical-timeline-element-title">
@@ -54,10 +52,10 @@ const Timeline = () => {
 
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
-        contentStyle={{ background: '#ff7b4a', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  #ff7b4a' }}
+        contentStyle={{ background: '#d86737', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  #d86737' }}
         date="January 2021 - Present"
-        iconStyle={{ background: '#ff7b4a', color: '#fff' }}
+        iconStyle={{ background: '#d86737', color: '#fff' }}
         icon={<FontAwesomeIcon icon={ faMedal } />}
       >
         <h3 style={{ color: 'white' }} className="vertical-timeline-element-title">
@@ -73,10 +71,10 @@ const Timeline = () => {
 
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
-        contentStyle={{ background: '#ff7b4a', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  #ff7b4a' }}
+        contentStyle={{ background: '#d86737', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  #d86737' }}
         date="November 2018"
-        iconStyle={{ background: '#ff7b4a', color: '#fff' }}
+        iconStyle={{ background: '#d86737', color: '#fff' }}
         icon={<FontAwesomeIcon icon={ faMedal } />}
       >
         <h3 style={{ color: 'white' }} className="vertical-timeline-element-title">
