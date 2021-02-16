@@ -5,7 +5,7 @@ import NavbarMenu from './navbar-menu';
 import styles from '../../styles/components/navbar/Navbar.module.scss';
 import { menu } from '../../data/navbar/navbar-data';
 
-const Navbar = ({ transparent = '' }) => {
+const Navbar = ({ transparent = '', section = '' }) => {
   let styleMenu = {};
   let styleLinksMenu = {};
 
@@ -46,6 +46,7 @@ const Navbar = ({ transparent = '' }) => {
       <div className={ styles.menu }>
         <NavbarMenu 
           menu={ menu }
+          section={ section }
           styleLinksMenu={ styleLinksMenu }
         />
       </div>

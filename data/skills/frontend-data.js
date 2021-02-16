@@ -6,21 +6,26 @@ export const frontendStaticContent = {
 export const frontendMappingContent = [
   {
     name: 'HTML',
-    width: '90%'
+    link: 'https://res.cloudinary.com/esdran26/image/upload/v1613496958/html-5_dtshue.svg'
   },
-  
   {
-    name: 'CSS - SASS - BOOTSTRAP',
-    width: '85%'
+    name: 'SASS',
+    link: 'https://res.cloudinary.com/esdran26/image/upload/v1613496958/Sass_Logo_Color_kyvyhh.svg'
   },
-
   {
-    name: 'JAVASCRIPT - TYPESCRIPT',
-    width: '85%'
+    name: 'BOOTSTRAP',
+    link: 'https://res.cloudinary.com/esdran26/image/upload/v1613496958/Bootstrap_logo_x7buzl.svg'
   },
-
   {
-    name: 'REACT - REDUX - NEXTJS',
-    width: '80%'
+    name: 'REACT',
+    link: 'https://res.cloudinary.com/esdran26/image/upload/v1613497525/react-seeklogo.com_vkyrcq.svg'
+  },
+  {
+    name: 'REDUX',
+    link: 'https://res.cloudinary.com/esdran26/image/upload/v1613496958/redux_rvrri2.png'
+  },
+  {
+    name: 'NEXTJS',
+    link: 'https://res.cloudinary.com/esdran26/image/upload/v1613496958/nextjs-3_ksbken.svg'
   }
 ];

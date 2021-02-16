@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
-const NavbarMenu = ({ menu, styleLinksMenu }) => {
-
+const NavbarMenu = ({ menu, section, styleLinksMenu }) => {
   return (
     <>
       {
