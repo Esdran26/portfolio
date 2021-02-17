@@ -20,22 +20,33 @@
   width: 40vw;
 }
 
-.tech {
+.tech, .techBackend {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5rem;
 }
 
-.tech div {
+.techBackend {
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.tech div, .techBackend div {
   transition: transform .3s ease-in-out;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 
-.tech div:hover {
-  transform: translateY(-5px);
-}
-
-.tech div p {
+.tech div p, .techBackend div p {
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 1920px) {
+  .tech, .techBackend {
+    grid-gap: 2rem;
+  }
 }
 
 @media screen and (max-width: 980px) {

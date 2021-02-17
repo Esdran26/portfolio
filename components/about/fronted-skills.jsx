@@ -38,6 +38,7 @@ const FrontendSkills = () => {
                   className={ styles.image }
                   width={ 100 }
                   height={ 100 }
+                  priority
                 />
                 <p>{ skill.name }</p>
               </div>

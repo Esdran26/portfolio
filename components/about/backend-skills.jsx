@@ -16,27 +16,25 @@ const BackendSkills = () => {
         <h3>{ title }</h3>
         <br/><br/>
 
-        {
-          backendMappingContent.map((skill, index) => (
-            <div 
-              className={ styles.progress }
-              key={ index }
-            >
-              <p>
-                { skill.name }
-                <span>
-                  { skill.width }
-                </span>
-              </p>
-
-              <div className={ styles.progressBar }>
-                <div style={{ width: skill.width }}>
-
-                </div>
+        <div className={ styles.techBackend }>
+          {
+            backendMappingContent.map((skill, index) => (
+              <div 
+                key={ index }
+              >
+                <Image 
+                  alt={ skill.name }
+                  src={ skill.link }
+                  className={ styles.image }
+                  width={ 100 }
+                  height={ 100 }
+                  priority
+                />
+                <p>{ skill.name }</p>
               </div>
-            </div>
-          ))
-        }
+            ))
+          }
+        </div>
 
       </div>
 

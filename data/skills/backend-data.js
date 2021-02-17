@@ -6,21 +6,21 @@ export const backendStaticContent = {
 export const backendMappingContent = [
   {
     name: 'NODEJS',
-    width: '75%'
+    link: 'https://res.cloudinary.com/esdran26/image/upload/v1613578291/nodejs_rqriej.png'
   },
   
   {
     name: 'EXPRESSJS',
-    width: '75%'
+    link: 'https://res.cloudinary.com/esdran26/image/upload/v1613579068/expressjs_ahwjjx.png'
   },
 
   {
     name: 'MONGODB',
-    width: '70%'
+    link: 'https://res.cloudinary.com/esdran26/image/upload/v1613578291/mongodb_k4inzh.png'
   },
 
   {
-    name: 'MYSQL - POSTGRESQL',
-    width: '85%'
+    name: 'MYSQL',
+    link: 'https://res.cloudinary.com/esdran26/image/upload/v1613578291/mysql_tz1rdk.png'
   }
 ];
