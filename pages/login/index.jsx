@@ -2,10 +2,12 @@ import Head from 'next/head';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 const Login = () => {
   const { register, handleSubmit, errors } = useForm();
   const [serverError, setServerError] = useState('');
+  const router = useRouter();
 
   const onSubmit = data => {
     axios.post(
@@ -13,11 +15,14 @@ const Login = () => {
       data
     )
     .then(res => {
-      console.log(res);
+      const uid = res.data.uid;
+      localStorage.setItem('uid', uid);
+
+      router.replace('/login/auth/projects');
     })
     .catch(error => {
       setServerError(error.response.data.msg);
-    })
+    });
   };
 
   return(
@@ -28,6 +33,9 @@ const Login = () => {
       </Head>
 
       <div className="container pt-5">
+
+        <h1 className="text-center">LOGIN</h1>
+        <br/>
 
         {
           serverError !== '' &&
