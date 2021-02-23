@@ -1,5 +1,5 @@
 export const backendStaticContent = {
-  title: 'Backend Development',
+  title: 'Other Technologies That I Use',
   url: 'https://res.cloudinary.com/esdran26/image/upload/v1612842943/Illustration-1_apueuz.svg'
 }
 

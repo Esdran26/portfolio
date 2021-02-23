@@ -1,29 +1,10 @@
 import Head from 'next/head';
-import axios from 'axios';
 import { useForm } from 'react-hook-form';
-import { useState } from 'react';
-import { useRouter } from 'next/router';
 
 const Login = () => {
   const { register, handleSubmit, errors } = useForm();
-  const [serverError, setServerError] = useState('');
-  const router = useRouter();
 
-  const onSubmit = data => {
-    axios.post(
-      'https://portfolio-backend-mern.herokuapp.com/api/auth/', 
-      data
-    )
-    .then(res => {
-      const uid = res.data.uid;
-      localStorage.setItem('uid', uid);
-
-      router.replace('/login/auth/projects');
-    })
-    .catch(error => {
-      setServerError(error.response.data.msg);
-    });
-  };
+  const onSubmit = data => console.log(data)
 
   return(
     <>
@@ -36,13 +17,6 @@ const Login = () => {
 
         <h1 className="text-center">LOGIN</h1>
         <br/>
-
-        {
-          serverError !== '' &&
-          <div className="alert alert-danger">
-            { serverError }
-          </div>
-        }
 
         <form onSubmit={ handleSubmit(onSubmit) }>
           <div className="mb-3">

@@ -8,10 +8,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { faMedal } from '@fortawesome/free-solid-svg-icons';
-
 const Timeline = () => {
+  let isAnimate = false;
+
   return(
-    <VerticalTimeline>
+    <VerticalTimeline animate={ false }>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentStyle={{ background: '#227093', color: '#fff' }}

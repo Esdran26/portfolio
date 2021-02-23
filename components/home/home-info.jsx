@@ -26,7 +26,7 @@ const HomeInfo = () => {
         <div className={ styles.content }>
           <p>THIS IS ME</p>
           <h1>ANDRES VARGAS</h1>
-          <p>Web Developer passionate about software development and
+          <p>FrontEnd Developer passionate about software development and
           keep learning new technologies, experiences and communities.</p>
           <br/>
           

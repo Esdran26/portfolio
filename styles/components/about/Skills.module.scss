@@ -9,21 +9,18 @@
 }
 
 .skills {
-  width: 40vw;
+  
   margin: 0 auto;
 }
 
 .illustration, .tech, .skills h3 {
   text-align: center;
 }
-.illustration img {
-  width: 40vw;
-}
 
 .tech, .techBackend {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1.5rem;
+  grid-gap: 2rem;
 }
 
 .techBackend {
@@ -56,12 +53,11 @@
     margin-bottom: 4rem;
   }
 
-  .illustration img, .skills {
-    width: 70vw;
-  }
+  
 
   .skills {
     grid-row: 2 / 3;
+    margin: 0 1rem;
   }
 }
 
@@ -81,4 +77,5 @@
     flex-direction: column;
     margin-bottom: 3rem;
   }
+  
 }
