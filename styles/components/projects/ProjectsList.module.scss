@@ -1,0 +1,86 @@
+@import '../../settings.scss';
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  justify-items: center;
+}
+
+.project {
+  margin: 4rem 0;
+}
+
+.tech {
+  display: flex;
+  background-color: $primary;
+  padding: 2rem;
+  border-radius: 50px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.optionTech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $light;
+  min-width: 107px;
+}
+
+.image {
+  transition: transform .3s ease-in-out;
+  margin-right: -10rem;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+.title h3 {
+  margin: 2rem 0 0 2rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    margin: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    margin: 0;
+  }
+  .image {
+    margin-right: -8rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .image {
+    margin-right: 0;
+    margin-top: -4rem;
+  }
+  .project {
+    margin: 3rem 0;
+  }
+  .tech {
+    border-radius: 25px;
+    
+  }
+  .title h3 {
+    margin: 1rem 0 0 1rem;
+  }
+}

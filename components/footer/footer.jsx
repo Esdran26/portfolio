@@ -7,11 +7,7 @@ const Footer = () => {
   return (
     <footer className={ styles.footer }>
       <p>
-        Andres Felipe Vargas Gomez <Link href="/login">
-          <a style={{ color: '#707070', fontWeight: 'normal'}}>
-            &copy;
-          </a>
-        </Link> { year }
+        Andres Felipe Vargas Gomez &copy; { year }
       </p>
     </footer>
   );
