@@ -35,8 +35,8 @@ const HomeInfo = () => {
               <a>Discover Now</a>
             </Link>
             <a 
-              href="https://www.dropbox.com/s/oqf40tildt87sgz/CV-en.pdf?dl=0"
-              target="_blank"
+              href="https://dl.dropbox.com/s/oqf40tildt87sgz/CV-en.pdf?dl=0"
+              download
             >
               Download CV
             </a>
@@ -67,7 +67,7 @@ const HomeInfo = () => {
             </a>
           </Link>
           
-          <Link href="https://www.linkedin.com/in/andr%C3%A9s-vargas-586506185">
+          <Link href="www.linkedin.com/in/esdran26">
             <a target="_blank">
               <FontAwesomeIcon icon={ faLinkedinIn } />
             </a>

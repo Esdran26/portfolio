@@ -21,53 +21,57 @@ const ProjectsList = () => {
   }, [setProjects]);
 
   return(
-    <div className={ styles.container }>
-      {
-        loading &&
-        <h2>Loading...</h2>
-      }
+    <div>
+      <div style={{ textAlign: 'center' }}>
+        {
+          loading &&
+          <div className={ styles.ellipsis }><div></div><div></div><div></div><div></div></div>
+        }
+      </div>
+      <div className={ styles.container }>
 
-      {
-        !loading &&
-        projects.map(({ technologies, title, linkImage, linkWebSite, id }) => (
-          <div 
-            key={ id } 
-            className={ styles.project }
-          >
-            <div className={ styles.tech }>
-              <div  className={ styles.optionTech }>
-                {
-                  technologies.map((technologie, index) => (
-                      <p key={ index }>* { technologie } </p>
-                  ))
-                }
+        {
+          !loading &&
+          projects.map(({ technologies, title, linkImage, linkWebSite, id }) => (
+            <div 
+              key={ id } 
+              className={ styles.project }
+            >
+              <div className={ styles.tech }>
+                <div  className={ styles.optionTech }>
+                  {
+                    technologies.map((technologie, index) => (
+                        <p key={ index }>* { technologie } </p>
+                    ))
+                  }
+                </div>
+
+                <a 
+                  target="_blank" 
+                  href={ linkWebSite }
+                  className={ styles.image }
+                >
+                  <Image 
+                    alt={ title }
+                    src={ linkImage }
+                    width={ 445 }
+                    height={ 254.74 }
+                    priority
+                  />
+                </a>
               </div>
 
               <a 
                 target="_blank" 
                 href={ linkWebSite }
-                className={ styles.image }
+                className={ styles.title }
               >
-                <Image 
-                  alt={ title }
-                  src={ linkImage }
-                  width={ 445 }
-                  height={ 254.74 }
-                  priority
-                />
+                <h3>{ title }</h3>
               </a>
             </div>
-
-            <a 
-              target="_blank" 
-              href={ linkWebSite }
-              className={ styles.title }
-            >
-              <h3>{ title }</h3>
-            </a>
-          </div>
-        ))
-      }
+          ))
+        }
+      </div>
     </div>
   );
 }
