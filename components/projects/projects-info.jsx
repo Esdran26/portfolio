@@ -9,7 +9,7 @@ const ProjectsInfo = () => {
     <>
       <SectionTitle title="Projects" />
       <SectionText
-        text="Here you can see important moments in my life like software developer where I show you what steps I have taken to become who I'm today."
+        text="Here I show my learning with personal projects in frontend technologies, deployment and version control."
         icons={ iconsProjects } 
       />
 

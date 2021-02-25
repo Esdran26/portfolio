@@ -5,6 +5,7 @@ import styles from '../../styles/components/projects/ProjectsList.module.scss';
 
 const ProjectsList = () => {
   const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     axios.get(
@@ -12,6 +13,7 @@ const ProjectsList = () => {
     )
     .then(res => {
       setProjects(res.data.projects);
+      setLoading(false);
     })
     .catch(error => {
       console.log(error);
@@ -21,6 +23,12 @@ const ProjectsList = () => {
   return(
     <div className={ styles.container }>
       {
+        loading &&
+        <h2>Loading...</h2>
+      }
+
+      {
+        !loading &&
         projects.map(({ technologies, title, linkImage, linkWebSite, id }) => (
           <div 
             key={ id } 

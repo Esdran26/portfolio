@@ -35,8 +35,8 @@ const HomeInfo = () => {
               <a>Discover Now</a>
             </Link>
             <a 
-              target="_blank" 
-              href="/"
+              href="https://www.dropbox.com/s/oqf40tildt87sgz/CV-en.pdf?dl=0"
+              target="_blank"
             >
               Download CV
             </a>
