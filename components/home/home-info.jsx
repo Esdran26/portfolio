@@ -67,7 +67,7 @@ const HomeInfo = () => {
             </a>
           </Link>
           
-          <Link href="www.linkedin.com/in/esdran26">
+          <Link href="https://www.linkedin.com/in/esdran26/">
             <a target="_blank">
               <FontAwesomeIcon icon={ faLinkedinIn } />
             </a>
