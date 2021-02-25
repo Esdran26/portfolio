@@ -17,6 +17,7 @@ const About = () => {
         <link rel="shortcut icon" href="https://res.cloudinary.com/esdran26/image/upload/v1614266954/logo_qwetej.ico" type="image/x-icon"/>
         <meta name="REPLY-TO" content="vargasandres2627@gmail.com" />
         <link rev="made" href="mailto:vargasandres2627@gmail.com" />
+        <meta property="og:image" content="https://res.cloudinary.com/esdran26/image/upload/v1614268406/Mockup-Portfolio_q00ya8.png"></meta>
         <meta name="DESCRIPTION" content="This is my personal website, when I show my projects, timeline, who am I and more." />
         <meta name="KEYWORDS" content="Portfolio,Website,Personal,FrontEnd Developer,Web Developer" />
         <meta name="Resource-type" content="Document" />
