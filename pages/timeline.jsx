@@ -12,6 +12,7 @@ const Timeline = () => {
         
         <meta name="title" content="Andres Vargas | Portfolio" />
         <meta name="description" content="This is my personal website, when I show my projects, timeline, who am I and more." />
+        <link rel="shortcut icon" href="https://res.cloudinary.com/esdran26/image/upload/v1614278843/mobile_xi88d5.svg" type="image/x-icon"/>
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://vargasandres.com/" />
