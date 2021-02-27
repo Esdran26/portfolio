@@ -28,7 +28,7 @@ const About = () => {
         <meta property="twitter:description" content="This is my personal website, when I show my projects, timeline, who am I and more." />
         <meta property="twitter:image" content="https://res.cloudinary.com/esdran26/image/upload/v1614268406/Mockup-Portfolio_q00ya8.png" />
 
-        <meta http-equiv="Content-Type" content="text/html; ISO-8859-1" />
+        <meta httpEquiv="Content-Type" content="text/html; ISO-8859-1" />
         <meta name="DC.Language" scheme="RFC1766" content="English" />
         <meta name="AUTHOR" content="Andres Felipe Vargas Gomez" />
         <meta name="KEYWORDS" content="Portfolio,Website,Personal,FrontEnd Developer,Web Developer" />
