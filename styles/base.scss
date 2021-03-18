@@ -10,6 +10,31 @@ html, body {
   min-height: 100vh;
 }
 
+body::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  transition: all .3s ease-in-out;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: darken($color: $primary, $amount: 1);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: darken($color: $primary, $amount: 1);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 5px;
+}
+
 h1, h2 a, h2, h3, h4 {
   font-family: $font-title;
   font-weight: 900;
